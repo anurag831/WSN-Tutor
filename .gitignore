@@ -1,0 +1,24 @@
+# Virtual environment
+venv/
+
+# Environment variables - NEVER push this
+.env
+
+# ChromaDB vectorstore - too large for GitHub
+vectorstore/
+
+# HuggingFace model cache
+.cache/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# PDF documents - too large for GitHub
+backend/documents/
