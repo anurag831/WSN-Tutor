@@ -139,7 +139,3 @@ def get_answer(query: str) -> str:
 
     response = llm.invoke(prompt)
     return response.content
-
-
-if __name__ == "__main__":
-    print(get_answer("Explain me the algorithm of our project"))
