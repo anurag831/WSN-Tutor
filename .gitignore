@@ -21,4 +21,4 @@ __pycache__/
 Thumbs.db
 
 # PDF documents - too large for GitHub
-backend/documents/
+documents/

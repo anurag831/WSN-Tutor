@@ -2,7 +2,7 @@ from dotenv import load_dotenv
 import os
 import time
 import chromadb
-from langchain_community.document_loaders import PyPDFLoader
+from langchain_community.document_loaders import PyMuPDFLoader
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
 
@@ -14,7 +14,7 @@ all_documents = []
 
 for filename in os.listdir(docs_path):
     if filename.endswith(".pdf"):
-        loader = PyPDFLoader(os.path.join(docs_path, filename))
+        loader = PyMuPDFLoader(os.path.join(docs_path, filename))
         all_documents.extend(loader.load())
 
 print(f"Loaded {len(all_documents)} pages from all PDFs")
